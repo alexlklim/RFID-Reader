@@ -1,0 +1,44 @@
+@import "../scss/mixin_flex";
+@import "../scss/variables";
+@import "../scss/mixin";
+
+
+
+.dialog-overlay {
+  @include flex_center;
+  position: fixed;
+  @include size_w_h(100%, 100%);
+  z-index: 1000;
+  backdrop-filter: blur(40px);
+  .dialog-window {
+    @include flex_buttons;
+    @include size_w_h(900px, 300px);
+    @include padding_t_b_l_r(50px,20px,20px,20px);
+    margin-bottom: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    font-size: $font-size_products;
+    background-color: $color_background;
+    h2{
+      text-align: center;
+      width: 100%;
+    }
+    .buttons{
+      @include flex_buttons;
+      @include size_w_h(100%, 50%);
+      @include margin_t_b_l_r(20px, 0px, -10px, 0px);
+      button{
+        @include font_size_weight_color($font_size_buttons, $font_weight_products);
+        @include size_w_h(25%, 60%);
+        @include button_init;
+        transition: width 300ms ease, background-color 300ms ease;
+
+        &:hover{
+          @include size_w_h(23%, 60%);
+          background-color: $color_button_active;
+          color: white;
+        }
+      }
+    }
+  }
+}

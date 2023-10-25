@@ -1,0 +1,90 @@
+@import "variables";
+@import "mixin_flex";
+
+
+@mixin margin_t_b_l_r($top, $bottom, $left, $right){
+  margin: $top $right $bottom $left;
+}
+
+@mixin padding_t_b_l_r($top, $bottom, $left, $right){
+  padding: $top $right $bottom $left;
+}
+
+@mixin padding_products{
+  padding-left: 40px;
+}
+
+@mixin size_w_h ($width, $height){
+  width: $width;
+  height: $height;
+}
+
+
+@mixin font_size_weight_color($font_size, $font-weight){
+  font-size: $font_size;
+  font-weight: $font-weight;
+  font: $font-main;
+  color: $color_font;
+}
+
+
+@mixin box_shadow{
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(66, 68, 90, 0.31);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(66, 68, 90, 0.31);
+  box-shadow: 0px 0px 6px 0px rgba(66, 68, 90, 0.31);
+}
+
+@mixin main_blocks{
+  width: 50%;
+  min-width: 600px;
+  min-height: 400px;
+}
+
+@mixin font_family{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+@mixin button_style{
+  @include flex_center;
+  @include font_size_weight_color($font_size_sum, $font-weight);
+  margin-top: 20px;
+  cursor: pointer;
+  width: 34%;
+  height: 14%;
+  background: $color_button;
+  border: none;
+  border-radius: 30px;
+
+  p {
+    padding-right: 15px;
+  }
+}
+
+
+@mixin block_amount{
+  background: $color_button;
+  border-radius: 10px;
+  @include flex_center;
+
+  width: 40px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@mixin delete_icon{
+  color: $color-delete;
+  cursor: pointer;
+  &:hover{
+    color: black;
+  }
+}
+
+@mixin button_init{
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}

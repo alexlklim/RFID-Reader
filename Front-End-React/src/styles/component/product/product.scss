@@ -1,0 +1,49 @@
+@import "../../scss/mixin_flex";
+@import "../../scss/variables";
+@import "../../scss/mixin";
+
+
+.product{
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @include flex_product;
+  @include font_size_weight_color($font_size_products, $font_weight_products);
+  @include padding_products;
+  .col{
+    p{
+    }
+  }
+  &:hover{
+    background: $color_product;
+  }
+
+  .col1{
+    width: 50%;
+
+    p{
+      font-size: $font_size_desc;
+    }
+  }
+  .col2{
+    width: 12%;
+    @include flex_center;
+    .amount{
+      @include block_amount;
+    }
+  }
+  .col3{
+    width: 23%;
+    @include flex_center;
+  }
+  .col4{
+    @include flex_center;
+    width: 10%;
+    padding-left: 25px;
+    .delete{
+      font-size: 2.7rem;
+
+      @include delete_icon;
+    }
+  }
+}

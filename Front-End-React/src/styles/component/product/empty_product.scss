@@ -1,0 +1,39 @@
+@import "../../scss/mixin_flex";
+@import "../../scss/variables";
+@import "../../scss/mixin";
+
+
+
+.empty-product{
+  @include main_blocks;
+  height: 100%;
+  border-radius: 30px;
+
+  @include flex_empty_product;
+  @include font_size_weight_color($font_size_products, $font-weight);
+  background: $color_white;
+  text-align: center;
+
+
+  h1{
+    width: 85%;
+    padding-bottom: 30px;
+  }
+
+  img{
+    height: 40%;
+    width: 50%;
+  }
+  button{
+    @include button_style;
+    transition: background 0.3s, width 0.3s;
+    &:hover{
+      background: $color_button_active;
+      width: 36%;
+      color: $color_white;
+    }
+  }
+
+
+
+}

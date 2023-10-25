@@ -1,0 +1,67 @@
+@import "../../scss/mixin_flex";
+@import "../../scss/variables";
+@import "../../scss/mixin";
+
+
+
+.products{
+  @include box_shadow;
+  @include main_blocks;
+  height: 100%;
+  border-radius: 30px;
+  background: $color_background;
+
+  .header{
+    @include padding_products;
+    @include font_size_weight_color($font_size_main, $font-weight);
+    height: 12%;
+    background: $color_button;
+    border-radius: 30px 30px 0 0px;
+  }
+
+  .product-list{
+    @include font_size_weight_color($font_size_desc, $font_weight_products);
+    height: 65%;
+    overflow: auto;
+    //&::-webkit-scrollbar {
+    //  width: 13px;
+    //  background-color: $color_delete;
+    //}
+  }
+  .footer{
+    @include flex_footer;
+    @include padding_products;
+    @include font_size_weight_color($font_size_sum, $font-weight);
+    height: 23%;
+    background: $color_button;
+    border-radius: 0 0px 30px 30px;
+    .summary{
+      @include flex_summary;
+      height: 25%;
+      padding-left: 5px;
+      padding-right: 40px;
+    }
+    .summary-line{
+      background: $color_white;
+      border-radius: 15px 15px 15px 15px;
+      text-align: center;
+
+      @include flex_summary;
+      height: 25%;
+      padding-left: 5px;
+      margin-right: 25px;
+
+      .white-circle{
+
+        background: $color_background;
+        @include box_shadow;
+        border-radius: 15px 15px 15px 15px;
+        width: 150px;
+        padding-right: 16px;
+        text-align: end;
+      }
+
+
+    }
+  }
+}
