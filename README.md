@@ -9,13 +9,12 @@
 Description: service allow CRUD operations for admin users with Product and Hex entities. All data stored in MySQL DB. It allows communication with react application (get data from Item entity and needed basic operations)
 ![image](https://github.com/alexlklim/RFID-Reader/assets/91628959/1b96a9d2-bdd5-4491-9fc5-e0ab72337644)
 
-![image](https://github.com/alexlklim/RFID-Reader/assets/91628959/023a20ed-6411-47e5-ba54-0b8ac5f0ed9b)
-
 # 1 . TAG-SERVICE
 Description: receives and process data from Zebra RFID Reader. Have endpoints for Tag and management data. Configuration implemented with LocalRestApi. All data are stored in memory, not in DB. It is more better for temporary data.
 ![image](https://github.com/alexlklim/RFID-Reader/assets/91628959/e521c989-adee-4a67-92cb-03f16f326a60)
 
 ZEBRA FX9600 Configuration:
+
 ![image](https://github.com/alexlklim/RFID-Reader/assets/91628959/7ac23f29-5442-416b-8a49-e2edc929443b)
 
 # Database design
