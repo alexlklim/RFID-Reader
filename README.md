@@ -1,6 +1,8 @@
 # RFID-Reader
 Tools for Back-End: Java, Spring Boot, Eureka, Hibernate, JPA, MySQL, Lombok, WebFLux, Gateway
+
 Tools for Front-End: React, JS, SCSS
+
 Hardwere: Zebra FX9600 RFID Reader with 2 antenas
 
 # Structure of micro-services (eureka server)
